@@ -1,0 +1,25 @@
+
+
+.main-heading{
+    color:rgb(2, 14, 119);
+    font-size: 4.5em;
+    margin: 10px;
+}
+
+#main-logo{
+    height: 105px;
+    width: 130px;
+}
+
+#survey-form{
+    background-color: rgba(95, 5, 109, 0.35);
+    padding:10px;
+    margin: 10px;
+    font-size: 1.15em;
+}
+#comment{
+    display: block;
+    background-color: yellowgreen;
+    width: 100%;
+    height: auto;
+}

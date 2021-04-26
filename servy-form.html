@@ -1,0 +1,69 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="servy-form.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Annual event survey</title>
+</head>
+
+<body style='margin: 5px;'>
+    <div class='container'>
+        <header class='text-center'>
+            <img id='main-logo' class='img-responsive'
+                src='data:image/png;base64,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'>
+            <h1 id='title'class='text-danger'> Annual Pancake Breakfast</h1>
+            <p id='description' class='text-info'> Post Event Survey </p> <hr>
+        </header>
+
+        <br>
+        
+        <form id='survey-form' action=' https://www.freecodecamp.com/email-submit' method="get" target='_blank'>
+            <label id='name-label' for='Name'>Name:</label>
+            <input id='name' class="form-control" type="text" placeholder="Your full name here.." name='name' required> <br>
+            <label id='email-label' for='e-mail'> E-mail:</label>
+            <input id='email' class="form-control" type='email' placeholder="Example@...." name='email' required> <br>
+            <label id='dropdown-label' for='dropdown'> Gender</label>
+            <select name='gen' id='dropdown'>
+                <option value='male'>Male</option>
+                <option value='female'>Female</option>
+            </select> <br>
+            <label id='guest-number' for='number'>Number of guests you went with:</label>
+            <input id='number' min='1' max='20' type="number" placeholder="You attended with" name='number'> <br><br>
+            <label id='number-label' for='number'>How would you rate our event in category 1-10 (10 being the
+                higest)</label>
+            <input id='number' type="number" min='1' max='10'> <br><br>
+
+            <p> Would you recommend our event to a friend/family :</p>
+            <input id='will-recommend' type="checkbox" name="recommendation" value='will recommend'>
+            <label for='will-recommend'> Will recommend</label>
+            <input id='not-sure' type="checkbox" name='recommendation' value="not sure">
+            <label for='not-sure'>Not sure</label><br><br>
+            <p> How did you hear about us:</p>
+            <input type="radio" id='web' name='connect' value='web'>
+            <label for='web'>Website</label>
+            <input type="radio" id='social-media' name='connect' value='social-media'>
+            <label for='social-media'>Social-media</label>
+            <input type="radio" id='word' name='connect' value='word'>
+            <label for='word'>Word of mouth</label><br> <br>
+            <label for='comment'> Comment:</label><br>
+            <textarea id='comment' name='text-comments'>Comment here ..</textarea> <br> 
+            <!-- <input id='submit' class='btn btn-dark btn-block' type="submit" value="Submit"> -->
+            <button id='submit' class= 'btn btn-dark btn-block' type="submit"><i class='fa fa-paper-plane'></i>Submition</button>
+        </form>
+        <footer class='text-center'> &copy;2021<br>alaminruben@gmail.com</footer>
+    </div>
+</body>
+
+</html>
